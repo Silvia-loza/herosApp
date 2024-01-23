@@ -3,17 +3,10 @@ import { CommonModule } from '@angular/common';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterComponent } from './pages/register/register.component';
-
-
+import { AuthRoutingModule } from './auth-routing.module';
 
 @NgModule({
-  declarations: [
-    LayoutPageComponent,
-    LoginPageComponent,
-    RegisterComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [LayoutPageComponent, LoginPageComponent, RegisterComponent],
+  imports: [CommonModule, AuthRoutingModule],
 })
-export class AuthModule { }
+export class AuthModule {}
